@@ -8,13 +8,14 @@ public class Main {
         Scanner Keyboard;
         Keyboard = new Scanner(System.in);
         String Name;
-        int Weight,Height;
+        Float Weight,Height;
         System.out.println("Hello, We are going to find your BMI. What is your name?");
         Name = Keyboard.nextLine();
-        System.out.println("What is your weight in kilograms?");
-        Weight = Keyboard.nextInt();
-        System.out.println("What is your height in meters?");
-        Height = Keyboard.nextInt();
+        System.out.println("What is your weight in Pounds");
+        Weight = Keyboard.nextFloat();
+        System.out.println("What is your height in Inches?");
+        Height = Keyboard.nextFloat();
+        System.out.println(Name + "your BMI is "+((Weight*0.453592)/((Height*0.0254)*(Height*0.0254))));
         
 
 
